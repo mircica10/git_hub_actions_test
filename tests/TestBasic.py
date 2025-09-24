@@ -17,10 +17,9 @@ class TestBasic(unittest.TestCase):
         v3 = v1 * v2
         assert v3 == 12, 'mul should be 12'
 
-  
+
     def tearDown(self):
-        pass
-    
+        pass    
 
 if __name__ == '__main__':
     unittest.main()
