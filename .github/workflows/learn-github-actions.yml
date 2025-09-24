@@ -10,7 +10,7 @@ jobs:
     - name: Read Python Version
       id: get_python_version
       run: |
-        PYTHON_VERSION=$(cat python_version.txt)
+        PYTHON_VERSION=$(cat .python_version.txt)
         echo "PYTHON_VERSION=$PYTHON_VERSION" >> $GITHUB_ENV
         echo "PYTHON_VERSION is $PYTHON_VERSION"
     
