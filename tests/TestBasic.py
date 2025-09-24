@@ -20,7 +20,7 @@ class TestBasic(unittest.TestCase):
 
 
     def tearDown(self):
-        pass    
+        pass
 
 
 if __name__ == '__main__':
