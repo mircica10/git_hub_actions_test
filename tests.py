@@ -1,6 +1,7 @@
 import unittest
 
 class TestBasic(unittest.TestCase):
+  
   def setUp(self):
     pass
 
@@ -10,7 +11,7 @@ class TestBasic(unittest.TestCase):
     v3 = v1 + v2
     assert v3 == 9, 'sum should be 9'
   
-  def TearDown(self):
+  def tearDown(self):
     pass
     
 
