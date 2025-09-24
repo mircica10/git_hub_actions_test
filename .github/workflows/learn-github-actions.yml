@@ -6,11 +6,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v5
+
+    - name: Read Python Version
+      id: get_python_version
+      run: |
+        PYTHON_VERSION=$(cat python_version.txt)
+        echo "PYTHON_VERSION=$PYTHON_VERSION" >> $GITHUB_ENV
+        echo "PYTHON_VERSION is $PYTHON_VERSION"
     
-    - name: Set up Python
+    - name: Set up Python ${{ env.PYTHON_VERSION }}
       uses: actions/setup-python@v5
       with:
-        python-version: '3.9'
+        python-version: ${{ env.PYTHON_VERSION }}
     
     - name: Install dependencies
       run: |
