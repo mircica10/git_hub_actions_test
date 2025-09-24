@@ -1,7 +1,7 @@
 ARG PYTHON_VERSION=3.11
 
 # Use the official Python runtime image
-FROM python:python:${PYTHON_VERSION}  
+FROM python:${PYTHON_VERSION}  
  
 # Create the app directory
 RUN mkdir /app
