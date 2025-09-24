@@ -10,7 +10,7 @@ class TestBasic(unittest.TestCase):
     v3 = v1 + v2
     assert v3 == 9, 'sum should be 9'
   
-  def TeamDown(self):
+  def TearDown(self):
     pass
     
 
