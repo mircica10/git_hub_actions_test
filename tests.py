@@ -4,11 +4,11 @@ class TestBasic(unittest.TestCase):
   def setUp(self):
     pass
 
-  def TestSum(self):
+  def test_Sum(self):
     v1 = 4
     v2 = 5
     v3 = v1 + v2
-    assert(v3 == 9, 'sum should be 9')
+    assert v3 == 9, 'sum should be 9'
   
   def TeamDown(self):
     pass
