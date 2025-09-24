@@ -9,7 +9,7 @@ class TestBasic(unittest.TestCase):
 
 
     def test_sum(self):
-        v1, v2 = 4, 5    
+        v1, v2 = 4, 5
         v3 = v1 + v2
         assert v3 == 9, 'sum should be 9'
 
