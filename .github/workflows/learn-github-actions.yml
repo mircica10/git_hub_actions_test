@@ -21,4 +21,4 @@ jobs:
       run: flake8 models
     
     - name: Run Tests
-      run: pytest tests.py
+      run: pytest tests/TestBasic.py
