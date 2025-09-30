@@ -35,9 +35,9 @@ jobs:
       run: | 
         docker build --build-arg PYTHON_VERSION=${{ env.PYTHON_VERSION }} -t python_got_hub_ci_cd_hello .
 
-    - name: Save Docker image to tar file
-      run: docker save python_got_hub_ci_cd_hello:latest -o my-image.tar
-
+#    - name: Save Docker image to tar file
+#      run: docker save python_got_hub_ci_cd_hello:latest -o my-image.tar
+#
 #    - name: Upload image artifact
 #      uses: actions/upload-artifact@v4
 #      with:
